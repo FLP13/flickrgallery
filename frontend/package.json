@@ -1,0 +1,17 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "cypress open",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.7.0",
+    "cypress": "^9.6.1",
+    "serve-static": "^1.15.0"
+  }
+}
