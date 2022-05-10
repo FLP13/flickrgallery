@@ -66,12 +66,13 @@ class Gallery extends HTMLElement {
                         <style>
                         .image-wrapper {
                             position: relative;
+                            flex: 1;
                         }
 
                         .image {
-                            width: 300px;
+                            min-width: 300px;
+                            width: 100%;
                             height: 300px;
-                            margin: 5px;
                             object-fit: cover;
                         }
 
@@ -90,8 +91,8 @@ class Gallery extends HTMLElement {
                             position: absolute;
                             top: 0;
                             background: #ffffff7d;
-                            margin: 5px;
-                            width: 300px;
+                            min-width: 300px;
+                            width: 100%;
                             height: 300px;
                             display: flex;
                             align-items: center;
@@ -126,12 +127,14 @@ class Gallery extends HTMLElement {
                         padding-bottom: 200px;
                         max-width: 1200px;
                         align-self: center;
+                        gap: 12px;
                     }
                     
                     .skeleton-image {
-                        width: 300px;
+                        min-width: 300px;
+                        flex: 1;
+                        width: 100%;
                         height: 300px;
-                        margin: 5px;
                         background: linear-gradient(
                             to right,
                             rgba(255, 255, 255, 0),
@@ -180,6 +183,7 @@ class Gallery extends HTMLElement {
                 justify-content: center;
                 max-width: 1200px;
                 align-self: center;
+                gap: 12px;
             }
         </style>
         
